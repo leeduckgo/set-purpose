@@ -446,10 +446,10 @@ function App(props) {
       {networkDisplay}
       <BrowserRouter>
         <Menu style={{ textAlign: "center" }} selectedKeys={[route]} mode="horizontal">
-          <Menu.Item key="/">
+          <Menu.Item key="/set-purpose">
             <Link
               onClick={() => {
-                setRoute("/");
+                setRoute("/set-purpose");
               }}
               to="/"
             >
