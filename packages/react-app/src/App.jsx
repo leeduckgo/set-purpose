@@ -49,7 +49,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.ropsten; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -449,7 +449,7 @@ function App(props) {
           <Menu.Item key="/set-purpose">
             <Link
               onClick={() => {
-                setRoute("/set-purpose");
+                setRoute("/");
               }}
               to="/"
             >
@@ -499,7 +499,7 @@ function App(props) {
         </Menu>
 
         <Switch>
-          <Route exact path="/set-purpose">
+          <Route exact path="/">
             {/*
                 🎛 this scaffolding is full of commonly used components
                 this <Contract/> component will automatically parse your ABI
